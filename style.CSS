@@ -1,0 +1,434 @@
+/* GENERAL CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    color: #111;
+}
+
+.container {
+    width: 85%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* NAVBAR */
+
+header {
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #ff6900;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    color: #ff6900;
+}
+
+/* BUTTON */
+
+.btn {
+    background: #ff6900;
+    color: white;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #e65d00;
+}
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0;
+    gap: 40px;
+}
+
+.hero-content {
+    width: 55%;
+}
+
+.hero-content h5 {
+    font-size: 16px;
+}
+
+.hero-content h3 {
+    color: #ff6900;
+    font-size: 20px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    font-size: 13px;
+    margin: 20px 0;
+    color: #444;
+}
+
+.hero-image {
+    width: 40%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ff6900;
+}
+
+.social {
+    margin-top: 15px;
+}
+
+.social a {
+    color: black;
+    margin: 0 8px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* ABOUT SECTION */
+
+section {
+    padding: 65px 0;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image {
+    width: 45%;
+    text-align: center;
+}
+
+.about-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-content {
+    width: 55%;
+}
+
+.section-title {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* SKILLS */
+
+.skill {
+    margin: 15px 0;
+}
+
+.skill h4 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.progress {
+    height: 6px;
+    background: #e8e8e8;
+    border-radius: 10px;
+}
+
+.progress span {
+    display: block;
+    height: 100%;
+    background: #ff6900;
+    border-radius: 10px;
+}
+
+/* SERVICES */
+
+.heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.heading h2 {
+    font-size: 35px;
+}
+
+.heading p {
+    font-size: 13px;
+    color: #444;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.service-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background: #f7f7f7;
+    padding: 25px 15px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 20px #ddd;
+}
+
+.service-card .icon {
+    font-size: 32px;
+    color: #ff6900;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.service-card p {
+    font-size: 12px;
+    color: #444;
+}
+
+/* PROJECTS */
+
+.filters {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.filters button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters button.active,
+.filters button:hover {
+    background: #ff6900;
+    color: white;
+}
+
+.project-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-card h4 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.project-card small {
+    color: #ff6900;
+}
+
+/* TESTIMONIALS */
+
+.testimonial {
+    background: #f7f7f7;
+    padding: 35px;
+    border-radius: 10px;
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonial p {
+    font-size: 15px;
+    color: #444;
+}
+
+.testimonial h4 {
+    margin-top: 15px;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+}
+
+.contact form {
+    margin-top: 30px;
+}
+
+.contact input {
+    width: 300px;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact button {
+    padding: 13px 25px;
+    margin-left: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #f7f7f7;
+    text-align: center;
+    padding: 40px 0 0;
+}
+
+footer .logo {
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #111;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 13px;
+}
+
+.copyright {
+    background: #444;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 768px) {
+
+    .container {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero,
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content,
+    .hero-image,
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-image img,
+    .about-image img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .service-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .contact input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact button {
+        margin-left: 0;
+    }
+}
+
+/* Hide PDF download button while printing */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
